@@ -1,0 +1,6 @@
+language: java
+jdk: oraclejdk8
+sudo: false
+script:
+  - cd src/Pruebas
+  - HabitacionTest use oraclejdk8

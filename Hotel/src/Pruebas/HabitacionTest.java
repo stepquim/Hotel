@@ -10,7 +10,7 @@ import Clases.Habitacion;;
 public class HabitacionTest {
 
 private Habitacion H;
-private Habitacion HO;	
+private Habitacion Ht;	
 
 	
 	@Before       
