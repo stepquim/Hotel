@@ -82,7 +82,7 @@ public class Habitacion {
                 if (this.getEdad()>= 18 && this.getEdad()<=25){
                     valorExtra=50;
                 }
-                else if (this.getEdad()> 50 && this.getEdad()<=100){
+                else if (this.getEdad()>= 50 && this.getEdad()<=100){
                     precio=precio-50;
                 }
                 else if (this.getEdad()< 18 || this.getEdad()>100){

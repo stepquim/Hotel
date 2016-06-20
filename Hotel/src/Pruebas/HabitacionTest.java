@@ -9,8 +9,7 @@ import Clases.Habitacion;;
 
 public class HabitacionTest {
 
-private Habitacion H;
-private Habitacion Ht;	
+public Habitacion H;
 
 	
 	@Before       
@@ -24,6 +23,7 @@ private Habitacion Ht;
 		int res = H.getPrecioHabitacion();
 		int esperado=150;
 		assertEquals(res, esperado);
+		
 	} 
 	
 	@Before       
@@ -33,11 +33,26 @@ private Habitacion Ht;
 	
 	@Test       
 	public void testPizza2() {
-		BeforeHotel1();
+		BeforeHotel2();
 		int res = H.getPrecioHabitacion();
 		int esperado=150;
 		assertEquals(res, esperado);
-	} 
+	}
+	
+	@Before       
+	public void BeforeHotel3() { 
+		H= new Habitacion("sencilla","G",60);
+	}
+	
+	
+	@Test       
+	public void testPizza3() {
+		BeforeHotel3();
+		int res = H.getPrecioHabitacion();
+		int esperado=-1;
+		assertEquals(res, esperado);
+	}
+	
 	
 
 }
